@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/container.css" />
+    <link rel="stylesheet" href="style/form.css" />
+    <script defer src="script/script.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <form class="js-form">
+        <fieldset>
+          <legend class="legend">Twoje dane</legend>
+          <p>
+            <label>
+              Twój wzrost:
+              <input
+                class="js-height"
+                type="number"
+                min="1"
+                step="any"
+                name="height"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Twoja waga:
+              <input
+                class="js-weight"
+                type="number"
+                min="1"
+                step="any"
+                name="weight"
+                required
+              />
+            </label>
+          </p>
+        </fieldset>
+        <p>
+          <button class="button">Policz BMI</button>
+        </p>
+      </form>
+      <div class="description">
+        <p>Twoje BMI wynosi: <strong class="js-bmi">N/a</strong></p>
+        <p><strong class="js-bmi-color"></strong></p>
+        <p class="js-bmi-description"></p>
+      </div>
+    </div>
+  </body>
+</html>
